@@ -9,17 +9,35 @@
 <body>
     <div class="container">
         <div class="center-box">
-            <form id="input-form">
-                <input id="passenger-name" type="text" placeholder="Inserisci il tuo nome">
-                <input id="journey-length" type="number" placeholder="Chilometri">
-                <select id="age-bracket" name="age-bracket">
-                    <option value="minor">Minorenne</option>
-                    <option value="adult">Maggiorenne</option>
-                    <option value="elderly">Over 65</option>
-                </select>
-                <button id="submit-btn">Genera</button>
-                <!-- <input type="submit" value="Genera"> -->
+            <h1>Calcola il prezzo del tuo biglietto</h1>
+            <form>
+                <div class="input-box flex justify-center">
+                    <div>
+                        <p>Nome e Cognome</p>
+                        <input id="passenger-name" type="text" placeholder="Inserisci il tuo nome">
+                    </div>
+                    <div>
+                        <p>Km da percorrere</p>
+                        <input id="journey-length" type="number" placeholder="Chilometri">
+                    </div>
+                    <div>
+                        <p>Fascia d'età</p>
+                        <select id="age-bracket" name="age-bracket">
+                            <option value="minor">Minorenne</option>
+                            <option value="adult">Maggiorenne</option>
+                            <option value="elderly">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="button-box flex justify-center">
+                    <!-- <button id="submit-btn">Genera</button> -->
+                    <input id="submit-btn" class="btn" type="submit" value="Genera">
+                    <input class="btn" type="reset" value="Annulla">
+                </div>
             </form>
+        </div>
+        <div class="center-box">
+            <h1>Il tuo biglietto</h1>
         </div>
     </div>
 
