@@ -22,8 +22,12 @@ document.getElementById('submit-btn').addEventListener('click', function(event) 
 
     if (passengerAge === 'minor') {
         discountedPrice = basePrice - ((basePrice / 100) * discountPercentageMinors);
+        document.getElementById('discount-type').innerHTML = `Biglietto Junior`;
     } else if (passengerAge === 'elderly') {
         discountedPrice = basePrice - ((basePrice / 100) * discountPercentageElderly);
+        document.getElementById('discount-type').innerHTML = `Biglietto Senior`;
+    } else {
+        document.getElementById('discount-type').innerHTML = `Biglietto Standard`;
     }
 
     // 6. We'll limit the result to two decimal places by using toFixed(2)
@@ -39,8 +43,18 @@ document.getElementById('submit-btn').addEventListener('click', function(event) 
 
     if (Number.isFinite(discountedPrice)) {
         console.log(`The final price is ${finalPrice}€`);
+
+        // 1. We'll add a visual output with a recap of the inserted data and the final price
+
+        document.getElementById('output-name').innerHTML = passengerName;
+        document.getElementById('display-price').innerHTML = `${finalPrice}€`;
+        document.getElementById('coach').innerHTML = Math.floor(Math.random() * (10 - 1)) + 1;
+        document.getElementById('ticket-code').innerHTML = Math.floor(Math.random() * (100000 - 10000)) + 10000;
     } else {
         console.log('The script encountered an error. Please reload the page.');
+        document.getElementById('display-price').innerHTML = 'Error';
+        document.getElementById('coach').innerHTML = 'Error';
+        document.getElementById('ticket-code').innerHTML = 'Error';
     }
 
     event.preventDefault();
@@ -50,8 +64,8 @@ document.getElementById('submit-btn').addEventListener('click', function(event) 
 
 /*
 
-    document.getElementById('price').innerHTML = `${finalPrice}€`;
-    document.getElementById('price').innerHTML = 'Si è verificato un errore, riprova';
+    document.getElementById('display-price').innerHTML = `${finalPrice}€`;
+    document.getElementById('display-price').innerHTML = 'Error';
 
 
 */

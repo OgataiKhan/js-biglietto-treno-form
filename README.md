@@ -15,5 +15,6 @@ Milestone 1:
 
 Milestone 2:
 
-1. We'll add a visual output with a recap of the inserted data and the final price
-2. We'll add an "Annulla" button that will hide the output (if present) and empty the input fields
+1. Add a visual output with a recap of the inserted data and the final price
+2. Generate a random coach number (1-9) and ticket code (10000-99999)
+3. Add an "Annulla" button that will hide the output (if present) and empty the input fields
