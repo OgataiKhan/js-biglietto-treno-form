@@ -22,8 +22,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+h1, 
+h2,
+h3 {
     text-transform: uppercase;
+}
+
+h2 {
+    text-align: start;
+}
+
+.output .output-name-box #output-name {
+    font-size: 1.2rem;
+}
+
+.output .output-ticket-box p {
+    font-size: 1rem;
 }
 
 /* 
@@ -39,12 +53,6 @@ COMMON
 .justify-center {
     justify-content: center;
 }
-
-/* 
-********
-MAIN
-********
-*/
 
 body {
     background-color: rgb(236, 236, 236);
@@ -68,6 +76,16 @@ body {
 h1 {
     padding-bottom: 30px;
 }
+
+h2 {
+    padding-bottom: 15px;
+}
+
+/* 
+********
+INPUT
+********
+*/
 
 .input-box {
     gap: 50px;
@@ -97,4 +115,41 @@ h1 {
     color: #C41228;
     font-weight: 700;
     font-size: 1.2rem;
+}
+
+/* 
+********
+OUTPUT
+********
+*/
+
+.output {
+    color: black;
+}
+
+.output .output-name-box, 
+.output .output-ticket-box {
+    padding: 20px;
+}
+
+.output .output-name-box {
+    background-color: lightgrey;
+    width: 30%;
+}
+
+.output .output-name-box h3 {
+    padding-bottom: 20px;
+}
+
+
+
+.output .output-ticket-box {
+    background-color: white;
+    flex-grow: 1;
+    border: 2px solid lightgrey;
+    justify-content: space-around;
+}
+
+.output .output-ticket-box h4 {
+    padding-bottom: 50px;
 }
