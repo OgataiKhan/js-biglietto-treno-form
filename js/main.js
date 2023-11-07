@@ -1,5 +1,8 @@
 'use strict';
 
+//Save the entire visual output as a variable
+const outputBox = document.getElementById('output-box');
+
 // 1. The script will ask for the passenger's age bracket and the length of their journey through input forms and it will save the data as variables
 // 2. On click of the "Genera" button the rest of the script will be executed
 
@@ -48,6 +51,8 @@ document.getElementById('submit-btn').addEventListener('click', function(event) 
 
         document.getElementById('output-name').innerHTML = passengerName;
         document.getElementById('display-price').innerHTML = `${finalPrice}€`;
+
+        //2. Generate a random coach number (1-9) and ticket code (10000-99999)
         document.getElementById('coach').innerHTML = Math.floor(Math.random() * (10 - 1)) + 1;
         document.getElementById('ticket-code').innerHTML = Math.floor(Math.random() * (100000 - 10000)) + 10000;
     } else {
@@ -57,15 +62,13 @@ document.getElementById('submit-btn').addEventListener('click', function(event) 
         document.getElementById('ticket-code').innerHTML = 'Error';
     }
 
+    outputBox.classList.remove('d-none');
+
     event.preventDefault();
 });
 
+// 3. Add an "Annulla" button that will hide the output (if present) and empty the input fields
 
-
-/*
-
-    document.getElementById('display-price').innerHTML = `${finalPrice}€`;
-    document.getElementById('display-price').innerHTML = 'Error';
-
-
-*/
+document.getElementById('cancel-btn').addEventListener('click', function(event) {
+    outputBox.classList.add('d-none');
+});
