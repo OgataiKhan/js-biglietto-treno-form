@@ -9,13 +9,17 @@
 <body>
     <div class="container">
         <div class="center-box">
-            <input type="text" placeholder="Inserisci il tuo nome">
-            <input type="number" placeholder="Chilometri">
-            <select name="age-bracket" id="age-bracket">
-                <option value="minor">Minorenne</option>
-                <option value="adult">Maggiorenne</option>
-                <option value="elderly">Over 65</option>
-              </select>
+            <form id="input-form">
+                <input id="passenger-name" type="text" placeholder="Inserisci il tuo nome">
+                <input id="journey-length" type="number" placeholder="Chilometri">
+                <select id="age-bracket" name="age-bracket">
+                    <option value="minor">Minorenne</option>
+                    <option value="adult">Maggiorenne</option>
+                    <option value="elderly">Over 65</option>
+                </select>
+                <button id="submit-btn">Genera</button>
+                <!-- <input type="submit" value="Genera"> -->
+            </form>
         </div>
     </div>
 

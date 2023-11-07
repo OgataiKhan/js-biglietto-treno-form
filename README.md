@@ -4,7 +4,7 @@ This is a simple calculator that will output the price of a train ticket on the 
 
 Milestone 1:
 
-1. The script will ask for the passenger's age bracket and the length of their journey through input forms
+1. The script will ask for the passenger's age bracket and the length of their journey through input forms and it will save the data as variables
 2. On click of the "Genera" button the rest of the script will be executed
 3. The journey length string will be converted to a number using parseFloat()
 4. The base price will be calculated by multiplying the length of the journey in kms times 0.21
