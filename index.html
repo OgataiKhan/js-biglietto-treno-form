@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Train Ticket Price Calculator with Form</title>
+    <!-- My css -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- /My css -->
 </head>
 <body>
     <div class="container">
+        <!-- Input section -->
         <div class="center-box">
             <h1>Calcola il prezzo del tuo biglietto</h1>
             <form>
+                <!-- Input fields -->
                 <div class="input-box flex justify-center">
                     <div>
                         <p>Nome e Cognome</p>
@@ -29,12 +33,17 @@
                         </select>
                     </div>
                 </div>
+                <!-- /Input fields -->
+                <!-- Buttons -->
                 <div class="button-box flex justify-center">
                     <input id="submit-btn" class="btn" type="submit" value="Genera">
                     <input id="cancel-btn" class="btn" type="reset" value="Annulla">
                 </div>
+                <!-- /Buttons -->
             </form>
         </div>
+        <!-- /Input section -->
+        <!-- Output section -->
         <div class="center-box d-none" id="output-box">
             <h1>Il tuo biglietto</h1>
             <h2>Dettagli passeggero</h2>
@@ -63,8 +72,10 @@
                 </div>
             </div>
         </div>
+        <!-- /Output section -->
     </div>
 
+    <!-- JS -->
     <script src="js/main.js"></script>
 </body>
 </html>
