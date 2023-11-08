@@ -69,6 +69,6 @@ document.getElementById('submit-btn').addEventListener('click', function(event) 
 
 // 3. Add an "Annulla" button that will hide the output (if present) and empty the input fields
 
-document.getElementById('cancel-btn').addEventListener('click', function(event) {
+document.getElementById('cancel-btn').addEventListener('click', function() {
     outputBox.classList.add('d-none');
 });
