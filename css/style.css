@@ -97,8 +97,9 @@ INPUT
     flex-wrap: wrap;
 }
 
-.input-box p {
+.input-box label {
     padding-bottom: 10px;
+    display: block;
 }
 
 .input-box input,
