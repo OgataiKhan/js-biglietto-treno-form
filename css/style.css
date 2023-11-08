@@ -94,6 +94,7 @@ INPUT
 .input-box {
     gap: 50px;
     padding-bottom: 40px;
+    flex-wrap: wrap;
 }
 
 .input-box p {
@@ -139,6 +140,7 @@ OUTPUT
 .output .output-name-box {
     background-color: lightgrey;
     width: 30%;
+    min-width: 170px;
 }
 
 .output .output-name-box h3 {
@@ -150,6 +152,7 @@ OUTPUT
     flex-grow: 1;
     border: 2px solid lightgrey;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .output .output-ticket-box h4 {
